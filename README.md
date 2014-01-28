@@ -22,24 +22,16 @@ For example, if the key you were interested in toggling was `production_mode`, t
 % python path/to/simtoggle.py production_mode
 ```
 
-If you're using ZSH, add a function to your `.zshrc` file to keep it short and sweet.
+Add an alias to your `.zshrc` or `.bashrc` file to keep it short and sweet.
 
 ```zsh
-function tog-prod() {
-    python path/to/simtoggle.py "production_mode"
-}
+alias tog-prod="python path/to/simtoggle.py 'production_mode'"
 ```
 
 Then toggle your app settings with just:
 
 ```zsh
 % tog-prod
-```
-
-Bash users can create an alias in your `.bashrc` file for the same simplicity:
-
-```bash
-alias tog-prod="python path/to/simtoggle.py 'production_mode'"
 ```
 
 ## How it works
